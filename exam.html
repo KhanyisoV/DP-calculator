@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exam.css">
+
+    <title>Exam Mark</title>
+</head>
+
+<body>
+    <!-- Loader Container -->
+    <div class="loader-container" id="loader">
+        <!-- Spinning Circle Loader (default) -->
+        <div class="loader"></div>
+        
+        <!-- Alternative: Dots Loader (change display to flex to use) -->
+        <!-- <div class="dots-loader">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div> -->
+        
+        <!-- Alternative: Progress Bar Loader (change display to block to use) -->
+        <!-- <div class="progress-loader">
+            <div class="progress-bar"></div>
+        </div> -->
+        
+        <div class="loader-text">LOADING</div>
+        <!-- Optional: Add loading percentage -->
+        <!-- <div class="loader-percentage" id="loadingPercent">0%</div> -->
+    </div>
+
+    <h1 class="main-heading">Exam Mark</h1>
+    <!-- Navigation bar -->
+    <nav>
+        <ul class="nav-content">
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item" ><a href="exam.html"class="current-page-nav">Exam</a></li>
+            <li class="nav-item"><a href="finalMark.html">Final Mark</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hint -->
+     <p class="paragraph"><b>Hint:</b>You will be able to calculate the minumum mark you need in the exam to pass.</p>
+     <p class="paragraph"><b>Keywords: </b>DP (Duly Performed) = Class mark <br>   Supp (Supplimentary Exam) = Re-assesment<br>   Pass mark = Minimum mark for progression</p>
+      
+    
+
+      <div id="input-container">
+        <div>
+            <label class ="labels" for="dp">DP</label>
+            <input type="number" class="input-text" id="dp">
+
+        </div>
+         <div>
+            <label class ="labels" for="pass-mark">Pass mark</label>
+            <input type="number" class="input-text" id="pass-mark">
+
+        </div>
+         <div>
+            <label class ="labels" for="dp-weighting">DP weighting</label>
+            <input type="number" class="input-text" id="dp-weighting">
+
+        </div>
+        <div>
+            <label class ="labels" for="exam-weighting">exam weighting</label>
+            <input type="number" class="input-text" id="exam-weighting">
+
+        </div>
+        </div>
+
+          <p class="paragraph"><span id="result-dp"></span></p>
+         
+
+
+          <!-- Action buttons -->
+
+        <button id = "calculate-btn">Calculate</button>
+         <button id ="clear-btn">Clear</button>
+          <script src="exam.js"></script>
+          <footer>Powered by <b>Khanyiso Vabaza</b>, copyrights reserved ©. </footer>
+</body>
+</html>

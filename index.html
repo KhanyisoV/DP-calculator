@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    
+    <title>Main Page</title>
+</head>
+<body>
+    <!-- Loader Container -->
+    <div class="loader-container" id="loader">
+        <!-- Spinning Circle Loader (default) -->
+        <div class="loader"></div>
+        
+        <!-- Alternative: Dots Loader (change display to flex to use) -->
+        <!-- <div class="dots-loader">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div> -->
+        
+        <!-- Alternative: Progress Bar Loader (change display to block to use) -->
+        <!-- <div class="progress-loader">
+            <div class="progress-bar"></div>
+        </div> -->
+        
+        <div class="loader-text">LOADING</div>
+        <!-- Optional: Add loading percentage -->
+        <!-- <div class="loader-percentage" id="loadingPercent">0%</div> -->
+    </div>
+
+    <!-- Heading -->
+    <h1 class="main-heading">
+        Dp Calculator
+    </h1>  
+    <!-- Navigation bar -->
+    <nav>
+        <ul class="nav-content">
+            <li class="nav-item"><a href="index.html" class="current-page-nav">Home</a></li>
+            <li class="nav-item" ><a href="exam.html">Exam</a></li>
+            <li class="nav-item"><a href="finalMark.html">Final Mark</a></li>
+        </ul>
+    </nav>
+      <p class="paragraph"><b>Keywords: </b>Percentage = The weighting percentage <br>   Mark = The mark you got</p>
+      
+    
+
+  <div id="input-container">
+        <div>
+            <label class ="labels" for="percent-item1">Percentage</label>
+            <input type="number" class="input-text" id="percent-item1">
+
+        </div>
+        
+        <div>
+            <label class ="labels" for="mark-item1">Mark</label>
+            <input type="number" class="input-text" id="mark-item1">
+
+        </div>
+         <div>
+            <label class ="labels" for="percent-item2">Percentage</label>
+            <input type="number" class="input-text" id="percent-item2">
+
+        </div>
+        
+        <div class="input-row">
+            <label class ="labels" for="mark-item2">Mark</label>
+            <input type="number" class="input-text" id="mark-item2">
+
+        </div>
+    </div>
+
+
+    <!-- Action buttons -->
+
+    <button id = "add-row-btn">Add row +</button>
+    <button id ="calculate-btn">Calculator</button>
+    <button id ="clear-btn">Clear</button>
+
+    <!-- Dislay for the result -->
+
+    <p class="paragraph"><span id="result-dp"></span></p>
+
+    <script src="main.js"></script>
+
+    <footer>Powered by <b>Khanyiso Vabaza</b>, copyrights reserved ©. </footer>
+
+</body>
+</html>
